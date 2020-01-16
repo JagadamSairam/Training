@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+            <pre>
+        User Id  :  <input id=1 type="text" name="Name" required> <br>
+        Password :  <input id=2 type="password" name="Password" required> <br>
+        <A href="OnlineBooking.html" target="frame5">LOGIN</A> 
+        <A href="newuser.html">New User</A>
+       </pre>
+    </form>
+    <script>
+    var name = document.getElementById('Name');
+var pw = document.getElementById('Paswword');
+function store() {
+    localStorage.setItem('Name', name.value);
+    localStorage.setItem('Password', pw.value);
+}
+</script>
+</body>
+</html>
