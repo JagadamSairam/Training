@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        function check(form){
+            var nam=form.name.value;
+            var pass=form.password.value;
+                if(nam==' '||pass==' ')
+                alert("Enter the fields");
+                else{          
+                alert("Account Created \n Name is "+nam+"\nPasword is "+pass);
+                 }
+            
+        }
+    </script>
+</head>
+<body>
+    <form onsubmit="return check(this)">
+    <pre>
+        User Name : <input type="text" name="name" required><br><br>
+        Password  : <input type="password" name="password" required>
+        <br>
+        <br>
+        <input type="submit" name="submit">
+    </pre>
+    </form>
+    
+</body>
+</html>

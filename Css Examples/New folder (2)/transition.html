@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Transition</title>
+
+    <style> 
+        div {
+          width: 100px;
+          height: 100px;
+          background: blueviolet;
+          -webkit-transition-property: width; /* Safari */
+          -webkit-transition-duration: 2s; /* Safari */
+          transition-property: width;
+          transition-duration: 2s;
+        }
+        
+        div:hover {
+          width: 300px;
+        }
+        </style>
+</head>
+<body>
+    
+<h1>The transition-property Property</h1>
+
+<p>Hover over the div element below, to see the transition effect:</p>
+
+<div>dgfgfdgfdgddgf</div>
+
+<p><b>Note:</b> This example does not work in Internet Explorer 9 and earlier versions.</p>
+    
+</body>
+</html>
