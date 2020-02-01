@@ -1,0 +1,5 @@
+package cts.training.model;
+
+public class Company {
+
+}

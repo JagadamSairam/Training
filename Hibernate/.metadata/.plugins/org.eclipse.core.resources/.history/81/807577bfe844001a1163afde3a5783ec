@@ -1,0 +1,33 @@
+package com.cts.training.controller;
+
+
+import com.cts.training.dao.UserDAO;
+import com.cts.training.dao.impl.UserDAOImpl;
+import com.cts.training.model.User;
+
+public class UserController {
+
+	public static void main(String[] args) {
+
+		User user = new User(106, "sairam", "8767890", "jagadam@cts.com", 87673280567L, false);
+
+		UserDAO userDAO = new UserDAOImpl();
+
+		boolean status = userDAO.saveUser(user);
+		if (status) {
+			System.out.println("user Saved Successfully");
+		} else {
+			System.out.println("Try Again");
+		}
+		User user2=userDAO.getUserById(105);
+		boolean status2 = userDAO.daleteUser(user2);
+		
+		if(status2) {
+			System.out.println("User Deleted Success fully");
+		}
+		else {
+			System.out.println("Error Was Occured while deletion");
+		}
+	}
+
+}

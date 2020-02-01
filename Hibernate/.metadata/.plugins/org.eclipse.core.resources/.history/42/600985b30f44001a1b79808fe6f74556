@@ -1,0 +1,10 @@
+package cts.training.controller;
+
+public class CompanyCotroller {
+
+	public static void main(String[] args) {
+		Configuration cfg= new Configuration();
+
+	}
+
+}

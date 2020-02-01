@@ -1,0 +1,15 @@
+package com.cts.training.model;
+
+import java.io.Serializable;
+
+public class Registration implements Serializable{
+	private String username;
+	private String password;
+	private String reenterpass;
+	private long contact;
+	private int id;
+	private String email;
+	private String cemail;
+	
+}
+

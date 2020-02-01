@@ -1,0 +1,5 @@
+package com.cts.training.dao;
+
+public class CompanyDAO {
+
+}
