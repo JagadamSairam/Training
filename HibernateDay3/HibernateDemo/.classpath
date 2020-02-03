@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
+		<attributes>
+			<attribute name="module" value="true"/>
+			<attribute name="owner.project.facets" value="java"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.USER_LIBRARY/Hibernate_Jars"/>
+	<classpathentry kind="lib" path="C:/Users/Lenovo/Desktop/jars/required/antlr-2.7.7.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Lenovo/Desktop/jars/required/byte-buddy-1.9.5.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Lenovo/Desktop/jars/required/classmate-1.3.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Lenovo/Desktop/jars/required/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Lenovo/Desktop/jars/required/dom4j-2.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Lenovo/Desktop/jars/required/FastInfoset-1.2.15.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Lenovo/Desktop/jars/required/hibernate-commons-annotations-5.1.0.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Lenovo/Desktop/jars/required/hibernate-core-5.4.1.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Lenovo/Desktop/jars/required/istack-commons-runtime-3.0.7.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Lenovo/Desktop/jars/required/jandex-2.0.5.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Lenovo/Desktop/jars/required/javassist-3.24.0-GA.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Lenovo/Desktop/jars/required/javax.activation-api-1.2.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Lenovo/Desktop/jars/required/javax.persistence-api-2.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Lenovo/Desktop/jars/required/jaxb-api-2.3.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Lenovo/Desktop/jars/required/jaxb-runtime-2.3.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Lenovo/Desktop/jars/required/jboss-logging-3.3.2.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Lenovo/Desktop/jars/required/jboss-transaction-api_1.2_spec-1.1.1.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Lenovo/Desktop/jars/required/mysql-connector-java-5.1.47.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Lenovo/Desktop/jars/required/stax-ex-1.8.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Lenovo/Desktop/jars/required/txw2-2.3.1.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
