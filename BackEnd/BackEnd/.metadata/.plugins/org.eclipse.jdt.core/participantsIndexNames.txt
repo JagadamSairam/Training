@@ -1,0 +1,7 @@
+INDEX VERSION 1.131
+C:\Users\Lenovo\Desktop\BackEnd\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2671115797.index
+\StockExchangeWeb\src\main\java
+C:\Users\Lenovo\Desktop\BackEnd\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2639763328.index
+\StockExchangeChartingWeb\src\main\java
+C:\Users\Lenovo\Desktop\BackEnd\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2011309643.index
+\StockExchangeWeb\src\main\resources

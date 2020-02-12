@@ -1,0 +1,4 @@
+#Tomcat publish data
+#Wed Feb 12 17:54:48 IST 2020
+org.eclipse.jst.j2ee.server\:StockExchangeBackend=WEB-INF/lib/StockExchangeBackend-0.0.1-SNAPSHOT.jar
+org.eclipse.jst.j2ee.server\:/binary\:C\:\\Users\\Lenovo\\.m2\\repository\\org\\springframework\\spring-web\\5.2.3.RELEASE\\spring-web-5.2.3.RELEASE.jar=WEB-INF/lib/spring-web-5.2.3.RELEASE.jar

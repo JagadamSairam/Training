@@ -1,0 +1,47 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+	<%@ page isELIgnored="false" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+<a href="user"> Add User </a>
+
+<br>
+<a href="ipo">IPO Details</a>
+	<%-- <table>
+		<tr>
+			<th>ID</th>
+			<th>Email</th>
+			<th>Name</th>
+			<th>Password</th>
+			<th>Phone</th>
+			<th>UserName</th>
+			<th>Actions</th>
+		</tr>
+		
+		<c:forEach var="user" items="${list}"> 
+		
+		<tr>
+		
+		<td>${user.id}</td>
+		<td>${user.email}</td>
+		<td>${user.name}</td>
+		<td>${user.password}</td>
+		<td>${user.phone}</td>
+		<td>${user.username}</td>
+ 		<td><a href="<c:url value='/remove/${user.id }'/>" >Remove</a> |
+ 		<a href="<c:url value='/update/${user.id }'/>" >Update</a>
+ 	
+ 		</td>
+ 		
+ </tr>
+</c:forEach>
+	</table> --%>
+</body>
+</html>

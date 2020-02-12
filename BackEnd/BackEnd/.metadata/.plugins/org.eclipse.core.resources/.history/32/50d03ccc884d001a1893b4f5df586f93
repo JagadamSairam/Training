@@ -1,0 +1,39 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<c:url var="userUrl" value="/user/save"></c:url>
+	<form:form action="${userUrl}" modelAttribute="user">
+		<table>
+			<tr>
+				<td><form:label path="companyname">Company Name</form:label></td>
+				<td><form:input path="companyname" /></td>
+			</tr>
+			<tr>
+				<td><form:label path="stockexchange">StockExchange</form:label></td>
+				<td><form:input path="stockexchange" /></td>
+			</tr>
+			
+			<tr>
+				<td><form:label path="pricepershare">Price Per Share</form:label></td>
+				<td><form:input path="pricepershare" /></td>
+			</tr>
+			<tr>
+				<td><form:label path="totalstocks">TotalStocks</form:label></td>
+				<td><form:input path="totalstovks" /></td>
+			</tr>
+			<tr>
+				<td><form:label path="Remarks">Remarks</form:label></td>
+				<td><form:input path="Remarks" /></td>
+			</tr>
+		</table>
+	</form:form>
+
+</body>
+</html>
+

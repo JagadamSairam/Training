@@ -1,0 +1,33 @@
+package com.cts.training.middle.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.cts.training.dao.RegisterDAO;
+import com.cts.training.model.Register;
+
+
+@Controller
+public class HomeController {
+
+	@Autowired
+	RegisterDAO registerDAO;
+	
+	@RequestMapping("/")
+	public String indexPage(Model model) 
+	{
+		//model.addAttribute("message", "Welcome to Spring MVC");
+	//	List<String> names=new ArrayList<String>();
+		List<Register> users= registerDAO.getAllUsers();
+		model.addAttribute("list", users);
+		
+	//addNames(names);
+	//	model.addAttribute("list", names);
+		return "index";
+	}
+	
+}

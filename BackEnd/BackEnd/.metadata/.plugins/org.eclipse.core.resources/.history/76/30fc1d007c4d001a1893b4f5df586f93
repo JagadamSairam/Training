@@ -1,0 +1,74 @@
+package com.cts.training.middle.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.cts.training.dao.RegisterDAO;
+import com.cts.training.model.Register;
+
+
+@Controller
+public class HomeController {
+
+	@Autowired
+	RegisterDAO registerDAO;
+	
+	@Autowired
+	Model model;
+	
+	
+	@GetMapping("/user")
+	public String userPage(Model model)
+	{
+		List<Register> users = registerDAO.getAllUsers();
+		  model.addAttribute("list", users);
+		model.addAttribute("user", new Register());
+		return "user";
+	}
+	
+	@PostMapping("/user/save")
+	//@RequestMapping(value="/user/save", method= RequestMethod.POST)
+	public String addUser(@ModelAttribute("user") Register register) {//gets data from the form
+		registerDAO.saveOrUpdateUser(register);
+		//registerDAO.saveUser(register);
+		return "redirect:/user";
+	}
+	
+	@RequestMapping("/")
+	public String indexPage(Model model) 
+	{
+		//model.addAttribute("message", "Welcome to Spring MVC");
+	//	List<String> names=new ArrayList<String>();
+		List<Register> users= registerDAO.getAllUsers();
+		model.addAttribute("list", users);
+		
+	//addNames(names);
+	//	model.addAttribute("list", names);
+		return "index";
+	}
+	
+	@GetMapping("/remove/{id}")//{}-->path Variable
+	public String deleteUser(@PathVariable("id") int id) {//to get path variable dynamic or we can use @RequestParam
+		Register user = registerDAO.getUserById(id);
+		registerDAO.deleteUser(user);
+		return "redirect:/user";
+	}
+	
+	
+	@GetMapping("/update/${user.id }")
+	public String updateUser(@PathVariable("id") int id) {
+		Register user = registerDAO.getUserById(id);
+		model.addAttribue("user", user);
+		
+		return "";
+	}
+	
+}

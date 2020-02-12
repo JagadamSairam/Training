@@ -1,0 +1,81 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<%@ taglib uri="http://java.sun.com/jstl/core" prefix="c"%>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<c:url var="ipoUrl" value="/ipo/save"></c:url>
+	<form:form action="${ipoUrl}" modelAttribute="ipo">
+		<table>
+			<tr>
+				<td><form:label path="companyname">Company Name</form:label></td>
+				<td><form:input path="companyname" /></td>
+			</tr>
+			<tr>
+				<td><form:label path="stockexchange">StockExchange</form:label></td>
+				<td><form:input path="stockexchange" /></td>
+			</tr>
+			
+			<tr>
+				<td><form:label path="pricepershare">Price Per Share</form:label></td>
+				<td><form:input path="pricepershare" /></td>
+			</tr>
+			<tr>
+				<td><form:label path="totalstocks">TotalStocks</form:label></td>
+				<td><form:input path="totalstovks" /></td>
+			</tr>
+			<tr>
+				<td><form:label path="Remarks">Remarks</form:label></td>
+				<td><form:input path="Remarks" /></td>
+			</tr>
+			<tr>
+			<td>
+		<c:if test="${empty ipo.companyname}">
+		<input type ="submit" value="Submit"/>
+		</c:if>
+		<c:if test="${!empty ipo.companyname}">
+		<input type ="submit" value="Update"/>
+		</c:if>
+		 </td>
+		 </tr>
+		</table>
+	</form:form>
+
+
+<table>
+		<tr>
+			<th>Company Name</th>
+			<th>Stock Exchange</th>
+			<th>Price Per Share</th>
+			<th>Total Stocks</th>
+			<th>Remarks</th>
+			<th>Actions</th>
+		</tr>
+		
+		<c:forEach var="ipo" items="${list}"> 
+		
+		<tr>
+		
+		<td>${ipo.companyname}</td>
+		<td>${ipo.stockexchnage}</td>
+		<td>${ipo.pricepershare}</td>
+		<td>${ipo.totalstocks}</td>
+		<td>${ipo.remarks}</td>
+ 		<td><a href="<c:url value='/remove/${ipo.id }'/>" >Remove</a> |
+ 		<a href="<c:url value='/update/${ipo.id }'/>" >Update</a>
+ 	
+ 		</td>
+ 		
+ </tr>
+</c:forEach>
+	</table>
+
+
+</body>
+</html>
+

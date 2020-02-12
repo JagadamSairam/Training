@@ -1,0 +1,14 @@
+package com.cts.training.middle.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.cts.training.dao.RegisterDAO;
+
+public class HomeController {
+
+	@Autowired
+	RegisterDAO registerDAO;
+	
+	
+	
+}
