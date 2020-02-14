@@ -1,0 +1,5 @@
+com\cts\training\config\SecurityWebApplicationIntializer.class
+com\cts\training\config\ViewResolverConfiguration.class
+com\cts\training\config\WebAppIntializer.class
+com\cts\training\config\SecurityConfiguration.class
+com\cts\training\controller\HomeController.class
