@@ -173,5 +173,11 @@
 	Through Java Configuration
 ## Day 39 15-02-2020
 	Internal Hakathon
-
+## Day 40 17-02-2020
+	New Mentor..
+	-----------
+	Spring Security from data base users
+	Sql Joins
+	Sql sub queries
+	
  
