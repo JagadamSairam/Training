@@ -179,5 +179,11 @@
 	Spring Security from data base users
 	Sql Joins
 	Sql sub queries
-	
- 
+
+## Day 41 18-02-2020
+	PLSQL.
+	-----
+	SQL Procedures
+	SQL Functions
+	SQL Triggers
+	SQL Views
