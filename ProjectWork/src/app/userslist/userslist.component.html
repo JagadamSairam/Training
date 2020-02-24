@@ -1,0 +1,30 @@
+<br>
+<br>
+<table class="table" border="1" style="background-color: white;">
+    <tr>        <th>ID</th>
+
+        <th>User Name</th>
+        <th>Pass Word</th>
+        <th>Re Enter Pass Word</th>
+        <th>Contact </th>
+        <th>Emial</th>
+        <th>C-Email</th>
+        <th>Actions</th>
+    </tr>
+    <tr *ngFor=" let user of users">
+        <td>{{user.id}}</td>
+
+        <td>{{user.username}}</td>
+        <td>{{user.password}}</td>
+        <td>{{user.reenterpassword}}</td>
+        <td>{{user.phone}}</td>
+        <td>{{user.email}}</td>
+        <td>{{user.confirmemail}}</td>
+        <td><button class="btn btn-primary" (click)="update(user)"> Update </button>
+        <button class="btn btn-danger" (click)="delete(user)"> Delete </button></td>
+    </tr>
+</table>
+<div class="row justify-content-center">
+
+<button class="btn btn-primary" routerLink="registration"> Add New User </button>
+</div>
