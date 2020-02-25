@@ -1,0 +1,42 @@
+<br><div class="container">
+    <div class="row">
+    <div class="col">
+      
+            <div class="card shadow">
+                <p class="h4 card-header text-center" style="grid-row-end:span ;" style="font-variant-numeric: inherit;">Sector Details</p>
+                <div class="card-body bg-light">
+                    
+                    <form [formGroup]="registerSector">
+                        <div class="input-group mb-3" class="form-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">ID Number</span>
+                            </div>
+                            <input type="tel" formControlName="id" class="form-control" />
+                        </div>
+                        <div class="input-group mt-3 mb-3" class="form-group" >
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Sector Name</span>
+                            </div>
+                            <input type="text" formControlName="name" class="form-control" />
+                        </div>
+                        <div class="input-group mb-3" class="form-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Brief</span>
+                            </div>
+                            <input type="textbox" formControlName="brief" class="form-control" />
+                        </div>
+                      
+                        
+                        <div class="row justify-content-center">
+                        <button class="btn btn-info " (click)="submit()" routerLink='/sectorlist'>Register</button>
+                        <button type="reset" class="btn btn-danger ml-4 ">Reset</button></div>
+                   </form>
+                </div>
+            </div>
+      
+    </div>
+</div>
+
+</div>
+
+
