@@ -1,0 +1,54 @@
+<br>
+<br>
+
+<div id="body" class="container mt-5">
+    <div class="row">
+        <div class="col-3"></div>
+        <div class="col-6">
+          <form [formGroup]='stockPrice' class="form-group border p-5 border-curved mt-5" >
+        
+            <div class="input-group mt-3 mb-3" class="form-group" >
+                <div class="input-group-prepend">
+                    <span class="input-group-text">ID</span>
+                </div>
+                <input type="number" formControlName="id" class="form-control" disabled />
+            </div>
+            <div class="input-group mt-3 mb-3" class="form-group" >
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Company Code</span>
+                </div>
+                <input type="text" formControlName="companyCode" class="form-control"  />
+            </div>
+            <div class="input-group mt-3 mb-3" class="form-group" >
+                <div class="input-group-prepend">
+                    <span class="input-group-text">StockExchange</span>
+                </div>
+                <input type="text" formControlName="stockExchange" class="form-control"  />
+            </div>
+            <div class="input-group mt-3 mb-3" class="form-group" >
+                <div class="input-group-prepend">
+                    <span class="input-group-text">CurrentPrice</span>
+                </div>
+                <input type="text" formControlName="companyCode" class="form-control"  />
+            </div>
+            <div class="input-group mt-3 mb-3" class="form-group" >
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Date</span>
+                </div>
+                <input type="date" formControlName="date" class="form-control" />
+            </div>
+            <div class="input-group mt-3 mb-3" class="form-group" >
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Time</span>
+                </div>
+                <input type="time" formControlName="time" class="form-control"  />
+            </div>
+
+            <div class="row justify-content-center">
+                <button class="btn btn-info " (click)="update()">Submit</button>
+                <button type="reset" class="btn btn-danger ml-4 ">Reset</button></div>
+
+        </form>
+</div>
+</div>
+</div>

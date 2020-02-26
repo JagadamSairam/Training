@@ -1,0 +1,24 @@
+
+<br>
+<br>
+<table class="table" border="1">
+    <tr>
+        <th>ID</th>
+        <th>SectorName</th>
+        <th>Brief</th>
+        <th>Actions</th>
+    </tr>
+    <tr *ngFor=" let sector of sectors">
+        <td>{{sector.id}}</td>
+        <td>{{sector.name}}</td>
+        <td>{{sector.brief}}</td>
+
+        <td><button class="btn btn-primary" (click)="update(sector)"> Update </button>
+        <button class="btn btn-danger" (click)="delete(sector)"> Delete </button></td>
+
+    </tr>
+</table>
+
+<div class="row justify-content-center">
+    <button class="btn btn-primary" routerLink='/sector'> Add New IPO Details </button>
+    </div>
