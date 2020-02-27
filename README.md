@@ -211,4 +211,8 @@
 
 ##Day 48 26-02-2020
 	Project Work  ..
+
+##Day 49 27-02-2020
+	Mail Activation and verification
+	Profiles
 	
