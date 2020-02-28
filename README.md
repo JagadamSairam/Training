@@ -215,4 +215,8 @@
 ##Day 49 27-02-2020
 	Mail Activation and verification
 	Profiles
+
+##Day 50 28-02-2020
+	MicroServices
+	Implementing Micro Services to our project
 	
