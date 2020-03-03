@@ -219,4 +219,17 @@
 ##Day 50 28-02-2020
 	MicroServices
 	Implementing Micro Services to our project
+
+##Day 51 29-02-2020
+	Codesprint2
+
+##Day 52 02-03-2020
+	MicroServices
+
+##Day 53 03-03-2020
+	Spring Cloud-Starter
+	ribbon
+	feign basics
+	netflix-ureka
+	
 	
