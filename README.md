@@ -231,5 +231,10 @@
 	ribbon
 	feign basics
 	netflix-ureka
+
+
+##Day 54 04-03-2020
+	Spring Boot Testing
+
 	
 	
