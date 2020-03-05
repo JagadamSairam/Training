@@ -1,0 +1,12 @@
+{
+    "Companies": [
+      {
+        "name" : "Cognizant",
+        "location": "Chennai",
+        "turnover" : 230000000,
+        "contact" : 450000334,
+        "ceoname" : "Bryan",
+        "team" : 20
+      }
+    ]
+ }
