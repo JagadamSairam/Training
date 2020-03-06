@@ -1,0 +1,40 @@
+{
+  "users": [
+    {
+      "id": 654,
+      "username": "kings jagadam",
+      "password": "Jagadam@1441",
+      "reenterpass": "Jagadam@1441",
+      "contact": "456789",
+      "email": "JagadamSairam@gmail.com",
+      "cemail": "JagadamSairam@gmail.com"
+    },
+    {
+      "id": "25421",
+      "username": "jagadam",
+      "password": "jahagafadam",
+      "reenterpass": "hagafadaj",
+      "contact": "516522222",
+      "email": "jagadam@gmail.com",
+      "cemail": "jagadam@gmail.com"
+    },
+    {
+      "id": "12",
+      "username": "sai",
+      "password": "ikujhgfdgh",
+      "reenterpass": "lkjhgfghj",
+      "contact": "98976578",
+      "email": "kings@gmail.com",
+      "cemail": "kjhgfgh@gmail.com"
+    },
+    {
+      "id": "543",
+      "username": "fsrat",
+      "password": "hsfgjhag",
+      "reenterpass": "jhgfshjngfah",
+      "contact": "87656789",
+      "email": "jkhgfd@gmail.com",
+      "cemail": "kjhgfds@gmail.com"
+    }
+  ]
+}

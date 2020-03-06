@@ -240,6 +240,9 @@
 	Netflix-zuul-server
 	project
 
-
+##Day 56 06-03-2020
+	ContinousIntegration
+	Dockers
+	Continous Delivery
 	
 	
