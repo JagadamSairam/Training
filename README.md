@@ -245,4 +245,9 @@
 	Dockers
 	Continous Delivery
 	
+##Day 57 07-03-2020
+	LoginValidations
+	HighCharts
+	Importing File
+
 	
