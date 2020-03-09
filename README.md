@@ -250,4 +250,8 @@
 	HighCharts
 	Importing File
 
+##Day 58 08-03-2020
+	SpringSecurityForLoginService
+	Authorization
+	
 	
