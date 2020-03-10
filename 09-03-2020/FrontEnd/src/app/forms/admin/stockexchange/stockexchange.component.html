@@ -1,0 +1,61 @@
+<br>
+<br>
+<div class="row">
+    <div class="col-sm-2 border-none">
+      <app-sidenav></app-sidenav>
+    </div>
+    <div class="col-sm-10">
+<div class="container">
+    <div class="row">
+    <div class="col">
+      
+            <div class="card shadow">
+                <p class="h4 card-header text-center" style="grid-row-end:span ;" style="font-variant-numeric: inherit;">Stock Details</p>
+                <div class="card-body bg-light">
+                    
+                    <form [formGroup]="registerStock">
+                        <div class="input-group mb-3" class="form-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">ID Number</span>
+                            </div>
+                            <input type="tel" formControlName="id" class="form-control" />
+                        </div>
+                        <div class="input-group mt-3 mb-3" class="form-group" >
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Exchange Name</span>
+                            </div>
+                            <input type="text" formControlName="exchangeName" class="form-control" />
+                        </div>
+                        <div class="input-group mb-3" class="form-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Contact Address</span>
+                            </div>
+                           
+                            <textarea  name="contactAddress" formControlName="contactAddress" class="form-control" cols="30" rows="5">
+                                Address
+                            </textarea>
+                        </div>
+                        <div class="input-group mb-3" class="form-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Brief</span>
+                            </div>
+                            <input type="text" formControlName="brief" class="form-control" />
+                        </div>
+                            
+                      
+                        
+                        <div class="row justify-content-center">
+                        <button class="btn btn-info " (click)="submit()" routerLink='/stocklist'>Register</button>
+                        <button type="reset" class="btn btn-danger ml-4 ">Reset</button></div>
+                   </form>
+                </div>
+            </div>
+      
+    </div>
+</div>
+
+</div>
+</div>
+</div>
+
+

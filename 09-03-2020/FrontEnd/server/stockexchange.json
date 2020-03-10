@@ -1,0 +1,25 @@
+{
+    "stockexchange" :  [
+        {
+            "id" : 100,
+            "Stock Exchange" : "BSE",
+            "Brief" : "HighQualified Exchange Service",
+            "Contact Address" : "Perungudi",
+            "Remarks" : "Good"
+        },
+        {
+            "id" : 101,
+            "Stock Exchange" : "MFSE",
+            "Brief" : "HighQualified Exchange Service",
+            "Contact Address" : "Karapakam",
+            "Remarks" : "Good"
+        },
+        {
+            "id" : 102,
+            "Stock Exchange" : "NSE",
+            "Brief" : "HighQualified Exchange Service",
+            "Contact Address" : "Shollinganalur",
+            "Remarks" : "Good"
+        }
+    ]
+}

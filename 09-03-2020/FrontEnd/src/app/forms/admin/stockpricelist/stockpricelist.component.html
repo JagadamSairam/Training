@@ -1,0 +1,30 @@
+<br>
+<br>
+<table class="table bg-dark  text-white" border=1>
+    <tr>
+        <th>ID</th>
+        <th>CompanyCode</th>
+        <th>StockExchange</th>
+        <th>Current Price</th>
+        <th>Date</th>
+        <th>Time</th>
+        <th>Actions</th>
+    </tr>
+    <tr *ngFor=" let stock of stocks">
+        <td>{{stock.id}}</td>
+        <td>{{stock.companyCode}}</td>
+        <td>{{stock.stockExchange}}</td>
+        <td>{{stock.currentPrice}}</td>
+        <td>{{stock.date}}</td>
+        <td>{{stock.time}}</td>
+        
+        
+    
+       
+        <td><button class="btn btn-primary" (click)="update(stock)"> Update </button>
+        <button class="btn btn-danger"  (click)="delete(stock)"> Delete </button></td>
+    </tr>
+</table>
+<div class="row justify-content-center">
+<button class="btn btn-primary" routerLink='/stockexchange'> Add New stock Price </button>
+</div>
