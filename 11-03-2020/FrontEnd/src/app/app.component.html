@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Home</title>
+  
+
+ 
+</head>
+<body> 
+   <header >
+ 
+<!-- <div class="jumbotron" style="padding: 1% ; overflow: -moz-hidden-unscrollable;"> -->
+  <h1 class="text-center text-shadow"  style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;    color: lawngreen; text-shadow: lightslategray; ">Stock Market Exchange</h1>
+<!-- </div> -->
+</header>
+
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-transparenct static-top">
+    <div class="container">
+      <a class="navbar-brand" href="#navbarResponsive">
+            <img class="img-resposive rounded-circle" src="../assets/stock-market-business-vector-logo-design-template-exchange-symbol-bull-bear-flat-illustration-55457795.jpg" style="width: 13%; width: 13%; padding-left: 30px;" alt="">
+          </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          
+          <li class="nav-item"style="padding-left: 10px; text-black" >  <i class="fa fa-home"><a routerLink="home">Home</a> </i></li>
+
+
+          <li class="nav-item" style="padding-left: 30px;"> <i class="fas fa-phone"><a routerLink="chart">Chart</a></i></li>
+          <!-- <div class="container">
+            <li class="nav-item " ><a type="button" class="btn btn-primary" routerLink="registration">SignUp</a></li>
+          </div> -->
+          <div class="container">
+
+          <li class="nav-item"><i class="fas fa-sign-in-alt" ><a type="button" style="float:let;" routerLink='adminlogin'> Login</a></i></li>
+
+        </div>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+       <div class="container-fluid"> 
+           <div style="min-height: 80vh;">
+
+
+            <!-- <div *ngIf="isAdmin">
+              <app-userslist></app-userslist>
+            </div>
+            <div *ngIf="!isAdmin"> -->
+              <router-outlet></router-outlet>
+            <!-- </div> -->
+   
+  </div>
+ 
+
+</div>
+
+
+<footer class="page-footer font-small blue bg-transparent" >
+  <div class="footer-copyright text-center py-3 bg-light text-black mb-3" >© 2020 Copyright:<a href="https://github.com/" target="_blank">Jagadam</a>
+    
+  </div></footer>
+
+</body>
+</html>

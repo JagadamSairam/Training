@@ -1,0 +1,11 @@
+.card{
+    transition: ease-in 0.2s;
+}
+.card:hover{ 
+    transform: scale(1.1);
+}
+
+.rowheight{
+    height: 600px;
+    overflow-y: scroll;
+}

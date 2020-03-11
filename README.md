@@ -250,12 +250,15 @@
 	HighCharts
 	Importing File
 
-##Day 58 08-03-2020
+##Day 58 09-03-2020
 	SpringSecurityForLoginService
 	Authorization
 
-##Day 59 089-03-2020
+##Day 59 10-03-2020
 	Zenkins
 	pipeline
 	project	
 	
+##Day 60 11-03-2020
+	LoginAuthentication
+	Project

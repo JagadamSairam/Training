@@ -1,0 +1,10 @@
+{
+    "sectors" : [
+        {
+            "id" : 541,
+            "sectorname" : "BSE" ,
+            "Brief" : "This is a good Sector"
+
+        }
+    ]
+}
