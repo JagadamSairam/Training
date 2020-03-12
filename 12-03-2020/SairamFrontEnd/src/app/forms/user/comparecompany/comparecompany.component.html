@@ -1,0 +1,207 @@
+<div class="row">
+  <div class="col-sm-2 border-none">
+    <app-side></app-side>
+  </div>
+  <div class="col-sm-10">
+
+
+
+
+<!-- <div id="body" class="container mt-5">
+    <div class="row">
+        <div class="col-3"></div>
+        <div class="col-6">
+          <form class="form-group border p-5 border-curved mt-5"  [formGroup]="compare">
+            <label for="companyname">Company Name 1:</label><br>
+            <input list="company1"  class="form-control">
+            <datalist id="company1">
+                <option *ngFor="let comp of company" value={{comp.id}}>{{comp.name}}</option>
+            </datalist><br>
+            <label for="companyname">Company Name 2:</label>
+            <input list="company2"  class="form-control">
+            <datalist id="company2">
+                <option *ngFor="let comp of company" value={{comp.id}}>{{comp.name}}</option>
+            </datalist><br>
+            
+            <div class="text-center">
+                <div class="col">
+                    <button type="submit" class="btn btn-success"  (click)="compareCompany()">Compare</button>
+                </div>
+            </div>
+        </form>
+</div>
+</div>
+</div> -->
+
+
+
+<main class="container">
+
+  <div class="display-4 text-center my-4">Compare Companies</div>
+
+  <div class="row justify-content-center">
+
+      <div class="card col-md-8 col-sm-10 mx-auto shadow">
+
+          <div class="card-body">
+
+              <div>
+
+                  <div class="form-group">
+
+                      <label for="company-sector">Select Company/Sector:</label>
+
+                      <select name="company-sector" id="company-sector" class="custom-select"
+
+                          (change)="enableSelection($event)">
+
+                          <option value="" selected disabled>Select comapny/sector...</option>
+
+                          <option value="company">Company</option>
+
+                          <option value="sector">Sector</option>
+
+                      </select>
+
+                  </div>
+
+                  <form *ngIf="companyComparision" [formGroup]="companyCompareForm" (ngSubmit)="onSubmit()">
+
+                      <div formArrayName="companies"
+
+                          *ngFor="let companyField of companyCompareForm.controls.companies.controls;let i=index">
+
+                          <div [formGroupName]="i">
+
+                              <div class="form-group">
+
+                                  <label for="stockExchange">Select Stock exchange:</label>
+
+                                  <select class="custom-select" formControlName="stockExchange"
+
+                                      (change)="onStockExchangeSelect($event,i)" id="stockExchange">
+
+                                      <option value="" selected disabled>Select stock exchange...</option>
+
+                                      <option *ngFor="let stockExchange of stockExchanges"
+
+                                          [value]="stockExchange.name">
+
+                                          {{ stockExchange.name }}
+
+                                      </option>
+
+                                  </select>
+
+                              </div>
+
+                              <div class="form-group">
+
+                                  <label for="companyName"><span *ngIf="i>0">2nd </span>Company Name: </label>
+
+                                  <button *ngIf="i==0" class="btn btn-info btn-sm float-right"
+
+                                      (click)="onAddSecondCompany()" [disabled]="!canAddAnther">Add second
+
+                                      company</button>
+
+                                  <select class="custom-select" formControlName="companyCode" id="companyName">
+
+                                      <option value="" selected disabled>Select company...</option>
+
+                                      <option *ngFor="let company of companies[i]"
+
+                                          [value]="getCompanyCode(company,i)">
+
+                                          {{company.name}}</option>
+
+                                  </select>
+
+                              </div>
+
+                          </div>
+
+                      </div>
+
+                      <div formArrayName="periods"
+
+                          *ngFor="let periodGroup of companyCompareForm.controls.periods.controls;let i=index">
+
+                          <div class="clearfix">
+
+                              <button *ngIf="i==0" class="btn btn-info btn-sm float-right"
+
+                                  (click)="onAddSecondPeriod()" [disabled]="!canAddAnther">
+
+                                  Add period
+
+                              </button>
+
+                          </div>
+
+                          <div class="row" [formGroupName]="i">
+
+                              <div class="col-6">
+
+                                  <label for="from-date"><span *ngIf="i>0">2nd </span>From: </label>
+
+                                  <input type="date" name="from-date" id="from-date" formControlName="fromDate"
+
+                                      class="form-control" placeholder="Confirm your password..." [max]="maxDate"
+
+                                      [min]="minDate">
+
+                              </div>
+
+                              <div class="col-6">
+
+                                  <label for="to-date"><span *ngIf="i>0">2nd </span>To: </label>
+
+                                  <input type="date" name="to-date" id="to-date" formControlName="toDate"
+
+                                      class="form-control" placeholder="Confirm your password..." [max]="maxDate"
+
+                                      [min]="minDate">
+
+                              </div>
+
+                          </div>
+
+                      </div>
+
+                      <div class="form-group">
+
+                          <label for="periodicity">Periodicity: </label>
+
+                          <select class="custom-select" formControlName="periodicity" id="periodicity">
+
+                              <option value="" selected disabled>Select company...</option>
+
+                              <option value="Month">Month</option>
+
+                              <option value="Year">Year</option>
+
+                              <option value="Daily">Daily</option>
+
+                          </select>
+
+                      </div>
+
+                      <button type="submit" class="btn btn-primary btn-block mt-3">Compare</button>
+
+                  </form>
+
+              </div>
+
+          </div>
+
+      </div>
+
+  </div>
+
+</main>
+
+
+
+</div>
+</div>
