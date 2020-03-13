@@ -1,0 +1,31 @@
+<div class="row">
+    <div class="col-sm-2 border-none">
+      <app-side></app-side>
+    </div>
+    <div class="col-sm-10">
+<br>
+<br>
+<table class="table" border="1">
+    <tr>
+        <th>ID</th>
+        <th>CompanyName</th>
+        <th>StockExchange</th>
+        <th>Price per Share </th>
+        <th>Shares</th>
+        <th>Date</th>
+        <th>Remarks</th>
+    </tr>
+    <tr *ngFor=" let ipo of ipos">
+        <td>{{ipo.id}}</td>
+        <td>{{ipo.companyName}}</td>
+        <td>{{ipo.stockExchange}}</td>
+        <td>{{ipo.pricePerShare}}</td>
+        <td>{{ipo.totalStocks}}</td>
+        <td>{{ipo.openDateTime}}</td>
+        <td>{{ipo.remarks}}</td>
+       
+
+    </tr>
+</table>
+</div>
+</div>

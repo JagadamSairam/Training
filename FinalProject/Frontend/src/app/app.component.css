@@ -1,0 +1,17 @@
+
+   body{
+      /* background-image: url('../assets/business-chart-line-graph-bar-chart-sideways-market-gray-color-background-dark-93729869.jpg'); */
+      /* background-image: url('../assets/financial-chart-line-graph-bar-chart-stock-numbers-stock-market-gradient-gray-color-background-93750827.jpg'); */
+      /* background-image: url('../assets/final.jpg'); */
+      /* background-image: url('../assets/stockmarketgif.gif'); */
+      background-image: url('../assets/anot.png');
+      background-size: cover;
+   }
+
+
+   .nav-item{
+      transition: ease-in 0.2s;
+  }
+  .nav-item:hover{ 
+      transform: scale(1.1);
+  }

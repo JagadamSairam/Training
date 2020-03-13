@@ -1,0 +1,9 @@
+.btn:hover{ 
+    transform: scale(1.1);
+}
+.card{
+    transition: ease-in 0.2s;
+}
+.card:hover{ 
+    transform: scale(1.1);
+}

@@ -1,0 +1,78 @@
+
+
+<br>
+<div class="row">
+    <div class="col-sm-2 border-none">
+      <app-sidenav></app-sidenav>
+    </div>
+    <div class="col-sm-10">
+<div class="container">
+    <div class="row">
+    <div class="col">
+      
+            <div class="card shadow">
+                <p class="h4 card-header text-center" style="grid-row-end:span ;" style="font-variant-numeric: inherit;">Company Registration</p>
+                <div class="card-body bg-light">
+                    
+                    <form [formGroup]="updateCompany">
+                        <div class="input-group mt-3 mb-3" class="form-group" >
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">ID</span>
+                            </div>
+                            <input type="number" formControlName="id" class="form-control" disabled />
+                        </div>
+                        <div class="input-group mt-3 mb-3" class="form-group" >
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">CompanyName</span>
+                            </div>
+                            <input type="text" formControlName="name" class="form-control" />
+                        </div>
+                        <div class="input-group mt-3 mb-3" class="form-group" >
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">CompanyCode</span>
+                            </div>
+                            <input type="text" formControlName="companyCode" class="form-control" />
+                        </div>
+                        <div class="input-group mt-3 mb-3" class="form-group" >
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Sector</span>
+                            </div>
+                            <input type="text" formControlName="sector" class="form-control" />
+                        </div>
+                        
+                      <div class="input-group mb-3" class="form-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">CeoName</span>
+                            </div>
+                            <input type="text" formControlName="ceoName" class="form-control" />
+                        </div>
+                        
+                        <div class="input-group mb-3" class="form-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">BOD</span>
+                            </div>
+                            <input type="text" formControlName="bod" class="form-control" />
+                        </div>
+                        
+                        <div class="input-group mt-3 mb-3" class="form-group" >
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">TurnOver</span>
+                            </div>
+                            <input type="number" formControlName="turnOver" class="form-control" />
+                        </div>
+                        
+                        <div class="row justify-content-center">
+                        <button class="btn btn-info " (click)="update()" [disabled]="!updateCompany.valid">Update</button>
+                      </div>
+                   </form>
+                </div>
+            </div>
+      
+    </div>
+</div>
+
+</div>
+</div>
+</div>
+
+
