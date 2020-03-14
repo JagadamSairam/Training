@@ -1,0 +1,30 @@
+.card{
+    transition: ease-in 0.2s;
+}
+.card:hover{ 
+    transform: scale(1.1);
+}
+
+
+
+.btn{
+    transition: ease-in 0.2s;
+}
+.btn:hover{ 
+    transform: scale(1.1);
+}
+/* .sidebar{
+  transition: all .3s ease-out;
+  overflow : scroll;
+  -webkit-overflow-scrolling: touch;
+  position: absolute;
+  top: 64px;
+  bottom: 0;
+  width: 260px;
+  background-color: #333;
+  left: 0;
+} */
+.rowheight{
+    height: 800px;
+    overflow-y: scroll;
+}

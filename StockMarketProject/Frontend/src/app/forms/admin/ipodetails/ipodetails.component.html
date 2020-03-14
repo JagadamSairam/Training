@@ -1,0 +1,40 @@
+
+<br>
+<br>
+<div class="row">
+    <div class="col-sm-2 border-none">
+      <app-sidenav></app-sidenav>
+    </div>
+    <div class="col-sm-10">
+<div class="table-responsive">
+<table class="table bg-dark  text-white" border="1">
+    <tr>
+        <th>ID</th>
+        <th>CompanyName</th>
+        <th>StockExchange</th>
+        <th>Price per Share </th>
+        <th>Shares</th>
+        <th>Date</th>
+        <th>Remarks</th>
+        <th>Actions</th>
+    </tr>
+    <tr *ngFor=" let ipo of ipos">
+        <td>{{ipo.id}}</td>
+        <td>{{ipo.companyName}}</td>
+        <td>{{ipo.stockExchange}}</td>
+        <td>{{ipo.pricePerShare}}</td>
+        <td>{{ipo.totalStocks}}</td>
+        <td>{{ipo.openDateTime}}</td>
+        <td>{{ipo.remarks}}</td>
+        <td><button class="btn btn-primary" (click)="update(ipo)"> Update </button>
+        <button class="btn btn-danger mx-2" (click)="delete(ipo)"> Delete </button></td>
+
+    </tr>
+</table>
+</div>
+<div class="row justify-content-center">
+    <button class="btn btn-primary" routerLink='./ipolist'> Add New IPO Details </button>
+    </div>
+    </div>
+    </div>
+    

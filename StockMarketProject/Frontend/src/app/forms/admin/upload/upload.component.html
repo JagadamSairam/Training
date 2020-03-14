@@ -1,0 +1,30 @@
+<div class="row">
+    <div class="col-lg-2">
+        
+        <app-sidenav></app-sidenav>
+     
+    </div>
+    <div class="col-lg-10">
+
+<div class="hero-bkg-animated">
+    <!-- <div class="card text-dark bg-light mb-3"> -->
+            <div class="display-4 text-center bold my-4" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Import Excel Data</div>
+            <form [formGroup]="uploadFile" (ngSubmit)="uploadData()">
+            <div class="card-body bg-light">
+    
+                <p class="card-text">Select File to be uploaded:&nbsp;</p>
+                <div class="input-group mb-3">
+                    <div class="custom-file">
+                        <input type="file" class="custom-file-input"name="excelFileUpload"  id="excelFileUpload" (change)="onFileChange($event)">
+                        <label class="custom-file-label" for="inputGroupFile">Choose file</label>
+                    </div>
+                    <div class="input-group-append">
+                        <span class="input-group-text btn" (click)="uploadData()" id="inputGroupFileAddon">Upload</span>
+                    </div>
+                </div>
+            </div>
+            </form>
+        </div>
+    
+    </div>
+</div>
